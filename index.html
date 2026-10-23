@@ -4,17 +4,278 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Меню на неделю</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Jost:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style-ny.css">
 </head>
 <body>
-  <header class="top">
-    <h1>Меню на неделю</h1>
-    <nav class="tabs" role="tablist">
-      <button class="tab active" data-tab="plan">План</button>
-      <button class="tab" data-tab="shopping">Покупки</button>
-      <button class="tab" data-tab="menu">Меню</button>
-    </nav>
+  <header class="masthead">
+    <div class="issue-line">
+      <span>Ресторанчик «У нас дома»</span>
+      <span>Столик на двоих · без брони</span>
+    </div>
+    <h1>Меню на&nbsp;неделю</h1>
+    <figure class="cover">
+      <svg viewBox="0 0 800 400" role="img" aria-label="Стол на двоих и рыжая вислоухая кошка, которая тянется лапой к сырникам">
+        <defs>
+          <pattern id="cloth" width="32" height="32" patternUnits="userSpaceOnUse">
+            <rect width="32" height="32" fill="var(--cloth)"/>
+            <path d="M0 16H32M16 0V32" stroke="var(--cloth-line)" stroke-width="1.4"/>
+            <path d="M0 8H32M0 24H32" stroke="var(--cloth-line)" stroke-width=".6" opacity=".6"/>
+          </pattern>
+          <clipPath id="frame"><rect width="800" height="400"/></clipPath>
+
+          <g id="syrnik">
+            <circle r="38" fill="var(--crust-dark)" stroke="var(--k)" stroke-width="2"/>
+            <circle r="33" fill="var(--crust)"/>
+            <circle cx="-3" cy="-3" r="26" fill="var(--crust-light)"/>
+            <path d="M-16 -14 q10 -8 22 -4" fill="none" stroke="var(--w)" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+            <g fill="var(--crust-dark)">
+              <circle cx="8" cy="6" r="2"/><circle cx="-10" cy="10" r="1.6"/><circle cx="14" cy="-8" r="1.4"/>
+              <circle cx="-4" cy="16" r="1.4"/><circle cx="2" cy="-2" r="1.2"/>
+            </g>
+          </g>
+          <g id="arugula">
+            <path d="M0 0 q8 -12 18 -9 q-1 5 5 5 q-1 6 5 8 q-3 4 2 8 q-14 8 -30 -12z" fill="var(--herb)" stroke="var(--k)" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M2 0 q12 4 24 10" fill="none" stroke="var(--herb-light)" stroke-width="1.3"/>
+          </g>
+          <g id="tomato">
+            <circle r="12" fill="var(--tomato)" stroke="var(--k)" stroke-width="1.3"/>
+            <circle r="8" fill="var(--tomato-light)"/>
+            <path d="M0 -8 V8 M-8 0 H8" stroke="var(--tomato)" stroke-width="1.5"/>
+            <g fill="var(--seed)"><ellipse cx="-4" cy="-4" rx="1.5" ry="2.2"/><ellipse cx="4" cy="-4" rx="1.5" ry="2.2"/><ellipse cx="-4" cy="4" rx="1.5" ry="2.2"/><ellipse cx="4" cy="4" rx="1.5" ry="2.2"/></g>
+          </g>
+          <g id="shrimp">
+            <path d="M-10 4 A11 11 0 1 1 7 10" fill="none" stroke="var(--k)" stroke-width="11" stroke-linecap="round"/>
+            <path d="M-10 4 A11 11 0 1 1 7 10" fill="none" stroke="var(--shrimp)" stroke-width="8" stroke-linecap="round"/>
+            <path d="M-6 -8 l4 5 M3 -10 l0 6 M10 -4 l-5 3 M10 6 l-5 -1" stroke="var(--shrimp-dark)" stroke-width="1.4"/>
+          </g>
+          <g id="mint">
+            <path d="M0 0 q6 -14 18 -10 q-4 14 -18 10z" fill="var(--herb-light)" stroke="var(--k)" stroke-width="1.2"/>
+            <path d="M1 -1 q8 -4 15 -8" fill="none" stroke="var(--herb)" stroke-width="1"/>
+          </g>
+          <g id="berry">
+            <circle r="6" fill="var(--berry)" stroke="var(--k)" stroke-width="1.3"/>
+            <circle cx="-2" cy="-2" r="1.6" fill="var(--w)" opacity=".8"/>
+          </g>
+          <g id="bread">
+            <path d="M0 40 Q0 0 35 0 Q70 0 70 40 V76 Q70 84 62 84 H8 Q0 84 0 76Z" fill="var(--crust-dark)" stroke="var(--k)" stroke-width="2"/>
+            <path d="M6 41 Q6 7 35 7 Q64 7 64 41 V74 Q64 78 60 78 H10 Q6 78 6 74Z" fill="var(--bread)"/>
+            <g fill="var(--bread-dark)"><ellipse cx="22" cy="30" rx="3" ry="2"/><ellipse cx="44" cy="22" rx="2" ry="1.5"/><ellipse cx="36" cy="48" rx="3.5" ry="2"/><ellipse cx="18" cy="60" rx="2" ry="1.5"/><ellipse cx="52" cy="62" rx="2.5" ry="2"/><ellipse cx="48" cy="40" rx="1.5" ry="1"/></g>
+          </g>
+        </defs>
+
+        <g clip-path="url(#frame)">
+          <rect width="800" height="400" fill="url(#cloth)"/>
+          <!-- солнечный луч -->
+          <path d="M0 0 H420 L120 400 H0Z" fill="#fff" opacity=".14"/>
+
+          <!-- тени -->
+          <g fill="var(--shadow)">
+            <path d="M40 46 L162 32 L176 148 L54 164Z"/>
+            <rect x="-20" y="262" width="150" height="130" rx="14" transform="rotate(-8 55 327)"/>
+            <rect x="140" y="146" width="22" height="226" rx="10"/>
+            <rect x="168" y="138" width="22" height="234" rx="10"/>
+            <circle cx="334" cy="214" r="120"/>
+            <circle cx="602" cy="134" r="82"/>
+            <circle cx="480" cy="72" r="31"/>
+            <circle cx="756" cy="102" r="46"/>
+            <circle cx="482" cy="262" r="24"/>
+            <circle cx="540" cy="228" r="12"/><circle cx="566" cy="246" r="12"/>
+            <circle cx="728" cy="244" r="28"/>
+          </g>
+
+          <!-- салфетка в полоску -->
+          <g stroke="var(--k)" stroke-width="2" stroke-linejoin="round">
+            <path d="M32 38 L154 24 L168 140 L46 156Z" fill="var(--w)"/>
+            <path d="M44 48 L146 36 L158 132 L56 144Z" fill="none" stroke="var(--tomato)" stroke-width="3"/>
+            <path d="M50 54 L140 43 L150 126 L61 137Z" fill="none" stroke="var(--tomato)" stroke-width="1.2"/>
+            <path d="M168 140 L140 142 L162 112Z" fill="var(--w-shade)" stroke-width="1.5"/>
+          </g>
+
+          <!-- доска с хлебом -->
+          <g transform="rotate(-8 55 327)" stroke="var(--k)" stroke-width="2">
+            <rect x="-30" y="254" width="150" height="130" rx="14" fill="var(--wood)"/>
+            <path d="M-20 280 q60 -8 130 4 M-20 320 q70 8 130 -4 M-20 356 q60 -6 130 6" fill="none" stroke="var(--wood-dark)" stroke-width="1.5"/>
+            <circle cx="104" cy="272" r="6" fill="var(--cloth)"/>
+          </g>
+          <use href="#bread" transform="translate(4 270) rotate(-14)"/>
+          <use href="#bread" transform="translate(44 286) rotate(4)"/>
+          <g fill="var(--crust-dark)"><circle cx="138" cy="372" r="2.5"/><circle cx="150" cy="360" r="1.8"/><circle cx="128" cy="388" r="2"/><circle cx="160" cy="382" r="1.5"/></g>
+
+          <!-- вилка и нож -->
+          <g stroke="var(--k)" stroke-width="2" fill="var(--silver)">
+            <path d="M130 142 v34 q0 14 10 18 v6 h8 v-6 q10 -4 10 -18 v-34" />
+            <path d="M137 142 v28 M144 142 v28 M151 142 v28" fill="none" stroke-width="1.5"/>
+            <rect x="136" y="198" width="16" height="164" rx="8"/>
+            <path d="M141 214 v130" stroke="var(--w)" stroke-width="2" opacity=".8"/>
+            <path d="M166 132 q22 24 16 94 h-16z"/>
+            <path d="M170 146 q10 18 8 70" fill="none" stroke="var(--w)" stroke-width="2" opacity=".8"/>
+            <rect x="164" y="224" width="18" height="140" rx="9"/>
+            <circle cx="173" cy="250" r="2.4" fill="var(--k)"/><circle cx="173" cy="338" r="2.4" fill="var(--k)"/>
+          </g>
+
+          <!-- большая тарелка: сырники со сметаной и ягодами -->
+          <circle cx="320" cy="200" r="120" fill="var(--plate)" stroke="var(--k)" stroke-width="2"/>
+          <circle cx="320" cy="200" r="107" fill="none" stroke="var(--rim)" stroke-width="6" stroke-dasharray="0 20" stroke-linecap="round"/>
+          <circle cx="320" cy="200" r="94" fill="var(--plate-well)" stroke="var(--k)" stroke-width="1"/>
+          <use href="#syrnik" transform="translate(286 172) rotate(10)"/>
+          <use href="#syrnik" transform="translate(352 166) rotate(-30)"/>
+          <use href="#syrnik" transform="translate(322 236) rotate(60)"/>
+          <path d="M262 196 q16 -14 32 -2 t34 -2 t34 4" fill="none" stroke="var(--berry)" stroke-width="4" stroke-linecap="round"/>
+          <g stroke="var(--k)" stroke-width="2">
+            <path d="M362 224 q18 -18 36 -2 q14 18 -4 30 q-24 10 -34 -8 q-4 -10 2 -20z" fill="var(--cream)"/>
+            <path d="M372 230 q10 -8 18 2 q4 10 -8 12" fill="none" stroke="var(--w)" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <use href="#berry" transform="translate(254 236)"/>
+          <use href="#berry" transform="translate(264 248)"/>
+          <use href="#berry" transform="translate(250 252)"/>
+          <use href="#berry" transform="translate(262 262)"/>
+          <use href="#berry" transform="translate(276 260)"/>
+          <use href="#mint" transform="translate(270 228) rotate(-40)"/>
+          <use href="#mint" transform="translate(386 206) rotate(-80)"/>
+          <use href="#mint" transform="translate(392 210) rotate(10)"/>
+
+          <!-- тарелка с салатом: руккола, креветки, томаты, авокадо, фета -->
+          <circle cx="590" cy="120" r="82" fill="var(--plate)" stroke="var(--k)" stroke-width="2"/>
+          <circle cx="590" cy="120" r="73" fill="none" stroke="var(--cloth-dark)" stroke-width="3" stroke-dasharray="9 6"/>
+          <circle cx="590" cy="120" r="64" fill="var(--plate-well)" stroke="var(--k)" stroke-width="1"/>
+          <use href="#arugula" transform="translate(548 100) rotate(-20)"/>
+          <use href="#arugula" transform="translate(572 80) rotate(30)"/>
+          <use href="#arugula" transform="translate(610 132) rotate(160)"/>
+          <use href="#arugula" transform="translate(560 140) rotate(-70)"/>
+          <use href="#arugula" transform="translate(626 92) rotate(100)"/>
+          <use href="#arugula" transform="translate(596 160) rotate(200)"/>
+          <g stroke="var(--k)" stroke-width="1.5">
+            <path d="M600 100 q24 6 30 30 q-8 2 -12 -4 q-6 -16 -22 -20z" fill="var(--avocado-light)" stroke="var(--k)"/>
+            <path d="M574 120 q4 24 26 32 q2 -6 -4 -10 q-14 -8 -16 -22z" fill="var(--avocado-light)"/>
+            <path d="M603 103 q20 6 25 25" fill="none" stroke="var(--avocado)" stroke-width="3"/>
+            <rect x="594" y="76" width="12" height="12" fill="var(--w)" transform="rotate(15 600 82)"/>
+            <rect x="560" y="116" width="11" height="11" fill="var(--w)" transform="rotate(-20 565 121)"/>
+            <rect x="618" y="140" width="10" height="10" fill="var(--w)" transform="rotate(35 623 145)"/>
+          </g>
+          <use href="#tomato" transform="translate(616 112)"/>
+          <use href="#tomato" transform="translate(568 96) scale(.85)"/>
+          <use href="#tomato" transform="translate(590 146) scale(.8)"/>
+          <use href="#shrimp" transform="translate(588 108) rotate(20)"/>
+          <use href="#shrimp" transform="translate(550 126) rotate(-60) scale(.9)"/>
+          <use href="#shrimp" transform="translate(632 136) rotate(120) scale(.9)"/>
+
+          <!-- бокал вина -->
+          <g>
+            <circle cx="470" cy="60" r="31" fill="var(--glass)" stroke="var(--w)" stroke-width="3"/>
+            <circle cx="470" cy="60" r="21" fill="var(--wine)" stroke="var(--wine-dark)" stroke-width="2"/>
+            <ellipse cx="462" cy="52" rx="7" ry="4" fill="var(--w)" opacity=".55" transform="rotate(-30 462 52)"/>
+            <path d="M448 76 a28 28 0 0 0 34 8" fill="none" stroke="var(--w)" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- кофе на блюдце -->
+          <g stroke="var(--k)" stroke-width="2">
+            <circle cx="746" cy="92" r="46" fill="var(--w)"/>
+            <circle cx="746" cy="92" r="38" fill="none" stroke="var(--cloth-dark)" stroke-width="1.5"/>
+            <path d="M778 82 h18 q8 0 8 10 t-8 10 h-18" fill="var(--w)"/>
+            <circle cx="746" cy="92" r="30" fill="var(--w)"/>
+            <circle cx="746" cy="92" r="23" fill="var(--coffee)" stroke-width="1.5"/>
+            <circle cx="746" cy="92" r="20" fill="none" stroke="var(--crema)" stroke-width="3"/>
+            <path d="M746 102 c-14 -8 -10 -20 0 -12 c10 -8 14 4 0 12z" fill="var(--crema)" stroke="none"/>
+            <path d="M706 124 l22 -14" stroke-width="5" stroke-linecap="round"/>
+            <path d="M706 124 l22 -14" stroke="var(--silver)" stroke-width="2.5" stroke-linecap="round"/>
+            <ellipse cx="700" cy="128" rx="7" ry="5" fill="var(--silver)" transform="rotate(-33 700 128)"/>
+          </g>
+
+          <!-- ваза с цветком -->
+          <g stroke="var(--k)" stroke-width="1.5">
+            <path d="M492 238 q30 -20 40 -46 q-34 4 -40 46z" fill="var(--herb)"/>
+            <path d="M492 238 q20 -18 34 -40" fill="none" stroke="var(--herb-light)"/>
+            <path d="M450 236 q-22 -18 -26 -42 q24 10 26 42z" fill="var(--herb)"/>
+            <circle cx="470" cy="256" r="24" fill="var(--w)" stroke-width="2"/>
+            <g fill="var(--tomato)">
+              <ellipse cx="470" cy="240" rx="9" ry="13"/>
+              <ellipse cx="470" cy="240" rx="9" ry="13" transform="rotate(72 470 256)"/>
+              <ellipse cx="470" cy="240" rx="9" ry="13" transform="rotate(144 470 256)"/>
+              <ellipse cx="470" cy="240" rx="9" ry="13" transform="rotate(216 470 256)"/>
+              <ellipse cx="470" cy="240" rx="9" ry="13" transform="rotate(288 470 256)"/>
+            </g>
+            <circle cx="470" cy="256" r="8" fill="var(--seed)"/>
+            <g fill="var(--crust-dark)" stroke="none"><circle cx="467" cy="253" r="1.3"/><circle cx="473" cy="255" r="1.3"/><circle cx="469" cy="259" r="1.3"/></g>
+            <ellipse cx="520" cy="190" rx="7" ry="10" fill="var(--tomato)" transform="rotate(50 520 190)"/>
+          </g>
+
+          <!-- соль и перец -->
+          <g stroke="var(--k)" stroke-width="1.5">
+            <circle cx="532" cy="220" r="12" fill="var(--w)"/>
+            <circle cx="558" cy="238" r="12" fill="var(--pepper)"/>
+            <g fill="var(--k)" stroke="none"><circle cx="528" cy="217" r="1.5"/><circle cx="535" cy="217" r="1.5"/><circle cx="531.5" cy="223" r="1.5"/></g>
+            <g fill="var(--w)" stroke="none"><circle cx="555" cy="235" r="1.5"/><circle cx="561" cy="235" r="1.5"/><circle cx="558" cy="241" r="1.5"/></g>
+          </g>
+
+          <!-- стакан воды с лимоном -->
+          <g>
+            <circle cx="720" cy="232" r="28" fill="var(--glass)" stroke="var(--w)" stroke-width="3"/>
+            <circle cx="726" cy="236" r="11" fill="var(--lemon)" stroke="var(--lemon-dark)" stroke-width="2"/>
+            <path d="M726 225 v22 M715 236 h22 M718 228 l16 16 M734 228 l-16 16" stroke="var(--lemon-dark)" stroke-width="1"/>
+            <rect x="704" y="218" width="12" height="12" rx="2" fill="var(--w)" opacity=".55" transform="rotate(20 710 224)"/>
+            <path d="M700 248 a26 26 0 0 0 20 10" fill="none" stroke="var(--w)" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+
+          <!-- рыжая шотландская вислоухая кошка -->
+          <g stroke="var(--k)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+            <!-- лапа -->
+            <path d="M650 412 Q560 350 450 312" fill="none" stroke-width="50"/>
+            <path d="M650 412 Q560 350 450 312" fill="none" stroke="var(--ginger)" stroke-width="45"/>
+            <path d="M520 316 q-10 14 2 30 M556 330 q-10 14 0 30 M592 350 q-8 12 0 26" fill="none" stroke="var(--ginger-dark)" stroke-width="6"/>
+            <ellipse cx="446" cy="308" rx="30" ry="24" fill="var(--ginger)" transform="rotate(20 446 308)"/>
+            <path d="M424 292 q8 4 6 12 M420 308 q8 2 8 10 M426 322 q6 -2 10 6" fill="none" stroke-width="1.6"/>
+            <path d="M452 288 q8 8 6 18" fill="none" stroke="var(--ginger-dark)" stroke-width="4"/>
+            <!-- голова с пушистыми щеками -->
+            <path d="M596 400 L603 386 L593 378 L605 368 L598 356 L611 350 C612 312 645 284 692 282 C740 280 772 308 775 346 L788 354 L781 364 L793 372 L784 382 L790 400 Z" fill="var(--ginger)"/>
+            <!-- светлая мордочка и грудка -->
+            <path d="M650 400 C652 378 670 362 692 362 C714 362 732 378 734 400Z" fill="var(--fur-light)" stroke="none"/>
+            <path d="M664 400 l6 -10 l6 10 M708 400 l6 -10 l6 10" fill="none" stroke="var(--ginger)" stroke-width="2"/>
+            <!-- сложенные ушки -->
+            <path d="M628 304 q2 -28 32 -22 q-6 16 -32 22z" fill="var(--ginger-dark)"/>
+            <path d="M636 298 q4 -12 16 -10" fill="none" stroke="var(--nose)" stroke-width="3"/>
+            <path d="M756 304 q-2 -28 -32 -22 q6 16 32 22z" fill="var(--ginger-dark)"/>
+            <path d="M748 298 q-4 -12 -16 -10" fill="none" stroke="var(--nose)" stroke-width="3"/>
+            <!-- полоски «М» на лбу и на щеках -->
+            <g fill="none" stroke="var(--ginger-dark)" stroke-width="5">
+              <path d="M672 290 q6 14 0 26"/><path d="M692 286 v30"/><path d="M712 290 q-6 14 0 26"/>
+              <path d="M660 300 q4 8 0 14"/><path d="M724 300 q-4 8 0 14"/>
+              <path d="M612 342 q14 -4 26 4"/><path d="M606 360 q16 -2 28 6"/>
+              <path d="M772 342 q-14 -4 -26 4"/><path d="M778 360 q-16 -2 -28 6"/>
+            </g>
+            <!-- глаза -->
+            <circle cx="660" cy="338" r="18" fill="var(--eye)"/>
+            <circle cx="724" cy="338" r="18" fill="var(--eye)"/>
+            <circle cx="661" cy="340" r="12" fill="var(--eye-dark)" stroke="none" opacity=".5"/>
+            <circle cx="725" cy="340" r="12" fill="var(--eye-dark)" stroke="none" opacity=".5"/>
+            <ellipse cx="663" cy="340" rx="6.5" ry="13" fill="var(--k)" stroke="none"/>
+            <ellipse cx="727" cy="340" rx="6.5" ry="13" fill="var(--k)" stroke="none"/>
+            <circle cx="667" cy="333" r="3.5" fill="var(--w)" stroke="none"/>
+            <circle cx="731" cy="333" r="3.5" fill="var(--w)" stroke="none"/>
+            <circle cx="659" cy="347" r="1.6" fill="var(--w)" stroke="none"/>
+            <circle cx="723" cy="347" r="1.6" fill="var(--w)" stroke="none"/>
+            <path d="M646 318 q12 -6 26 0 M710 318 q12 -6 26 0" fill="none" stroke-width="1.5"/>
+            <!-- нос, рот, усы -->
+            <path d="M683 365 q9 -3 18 0 q-3 7 -9 10 q-6 -3 -9 -10z" fill="var(--nose)"/>
+            <path d="M692 375 v4 q-6 8 -14 4 M692 379 q6 8 14 4" fill="none"/>
+            <g fill="var(--ginger-dark)" stroke="none"><circle cx="674" cy="372" r="1.4"/><circle cx="670" cy="378" r="1.4"/><circle cx="710" cy="372" r="1.4"/><circle cx="714" cy="378" r="1.4"/></g>
+            <g fill="none" stroke="var(--w)" stroke-width="1.6">
+              <path d="M664 372 q-30 -6 -60 -2"/><path d="M664 378 q-30 2 -58 10"/><path d="M666 384 q-26 8 -48 20"/>
+              <path d="M720 372 q30 -6 60 -2"/><path d="M720 378 q30 2 58 10"/><path d="M718 384 q26 8 48 20"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </figure>
   </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="plan">План</button>
+    <button class="tab" data-tab="shopping">Покупки</button>
+    <button class="tab" data-tab="menu">Меню</button>
+  </nav>
 
   <main>
     <div id="error" class="error" hidden></div>
