@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню на неделю</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Меню на неделю</h1>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="plan">План</button>
+      <button class="tab" data-tab="shopping">Покупки</button>
+      <button class="tab" data-tab="menu">Меню</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="error" class="error" hidden></div>
+
+    <section id="tab-plan" class="tab-panel">
+      <div class="toolbar">
+        <span></span>
+        <button id="clear-week" class="btn btn-ghost">Очистить неделю</button>
+      </div>
+      <div id="plan" class="week"></div>
+    </section>
+
+    <section id="tab-shopping" class="tab-panel" hidden>
+      <div class="toolbar">
+        <h2>Список покупок</h2>
+        <button class="btn" data-copy="shopping">Скопировать</button>
+      </div>
+      <div id="shopping"></div>
+    </section>
+
+    <section id="tab-menu" class="tab-panel" hidden>
+      <div class="toolbar">
+        <h2>Меню по дням</h2>
+        <button class="btn" data-copy="menu">Скопировать</button>
+      </div>
+      <div id="menu"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

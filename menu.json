@@ -1,0 +1,1374 @@
+{
+ "people": [
+  {
+   "id": "nastya",
+   "name": "Настюшка",
+   "kcal_target": 1600
+  },
+  {
+   "id": "maks",
+   "name": "Макс",
+   "kcal_target": 2800
+  }
+ ],
+ "meal_split": {
+  "breakfast": 0.25,
+  "lunch": 0.4,
+  "dinner": 0.35
+ },
+ "shared_split_rule": "Ингредиенты с who='both' делятся между людьми пропорционально нормам: Настюшка 36%, Макс 64%.",
+ "batch_definition": "ingredients описывают одну готовку = 1 приём пищи на двоих (2 порции). 4 порции = ingredients × 2.",
+ "ingredients": {
+  "творог 5%": {
+   "kcal": 121,
+   "protein": 17.2,
+   "fat": 5.0,
+   "carbs": 1.8,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "моцарелла твёрдая": {
+   "kcal": 300,
+   "protein": 24.0,
+   "fat": 22.0,
+   "carbs": 2.0,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "мука пшеничная": {
+   "kcal": 334,
+   "protein": 10.0,
+   "fat": 1.3,
+   "carbs": 70.0,
+   "pantry": true,
+   "category": "Базовые (не покупаем)"
+  },
+  "яйцо": {
+   "kcal": 157,
+   "protein": 12.7,
+   "fat": 11.5,
+   "carbs": 0.7,
+   "pantry": false,
+   "category": "Яйца",
+   "unit": "шт",
+   "grams_per_unit": 55
+  },
+  "масло растительное/оливковое": {
+   "kcal": 899,
+   "protein": 0,
+   "fat": 99.9,
+   "carbs": 0,
+   "pantry": true,
+   "category": "Базовые (не покупаем)"
+  },
+  "хлеб (ломтик 30 г)": {
+   "kcal": 258,
+   "protein": 8.5,
+   "fat": 3.0,
+   "carbs": 48.0,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб",
+   "unit": "ломтик",
+   "grams_per_unit": 30
+  },
+  "авокадо": {
+   "kcal": 160,
+   "protein": 2.0,
+   "fat": 14.7,
+   "carbs": 1.8,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень",
+   "unit": "шт",
+   "grams_per_unit": 140
+  },
+  "лосось слабосолёный/маринованный": {
+   "kcal": 200,
+   "protein": 22.0,
+   "fat": 12.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Рыба и морепродукты"
+  },
+  "лосось свежий (филе)": {
+   "kcal": 200,
+   "protein": 20.0,
+   "fat": 13.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Рыба и морепродукты"
+  },
+  "овсяные хлопья": {
+   "kcal": 366,
+   "protein": 12.3,
+   "fat": 6.1,
+   "carbs": 59.5,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб"
+  },
+  "сыр твёрдый": {
+   "kcal": 350,
+   "protein": 25.0,
+   "fat": 27.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "ветчина/колбаса": {
+   "kcal": 250,
+   "protein": 15.0,
+   "fat": 21.0,
+   "carbs": 1.0,
+   "pantry": false,
+   "category": "Мясо и птица"
+  },
+  "огурцы солёные": {
+   "kcal": 13,
+   "protein": 0.8,
+   "fat": 0.1,
+   "carbs": 1.7,
+   "pantry": false,
+   "category": "Бакалея и консервы"
+  },
+  "огурцы свежие": {
+   "kcal": 15,
+   "protein": 0.8,
+   "fat": 0.1,
+   "carbs": 2.8,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "паста сухая": {
+   "kcal": 350,
+   "protein": 12.0,
+   "fat": 1.5,
+   "carbs": 70.0,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб"
+  },
+  "говяжий фарш": {
+   "kcal": 220,
+   "protein": 18.0,
+   "fat": 16.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Мясо и птица"
+  },
+  "томаты в собственном соку": {
+   "kcal": 22,
+   "protein": 1.1,
+   "fat": 0.2,
+   "carbs": 3.8,
+   "pantry": false,
+   "category": "Бакалея и консервы"
+  },
+  "лук репчатый": {
+   "kcal": 41,
+   "protein": 1.4,
+   "fat": 0.2,
+   "carbs": 8.2,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "морковь": {
+   "kcal": 35,
+   "protein": 1.3,
+   "fat": 0.1,
+   "carbs": 6.9,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "пармезан": {
+   "kcal": 392,
+   "protein": 33.0,
+   "fat": 28.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "индейка филе": {
+   "kcal": 115,
+   "protein": 24.0,
+   "fat": 1.5,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Мясо и птица"
+  },
+  "филе индейки или курицы": {
+   "kcal": 114,
+   "protein": 23.8,
+   "fat": 1.7,
+   "carbs": 0.2,
+   "pantry": false,
+   "category": "Мясо и птица"
+  },
+  "сливки 10%": {
+   "kcal": 119,
+   "protein": 3.0,
+   "fat": 10.0,
+   "carbs": 4.0,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "шампиньоны": {
+   "kcal": 27,
+   "protein": 4.3,
+   "fat": 1.0,
+   "carbs": 0.5,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "куриное филе": {
+   "kcal": 113,
+   "protein": 23.6,
+   "fat": 1.9,
+   "carbs": 0.4,
+   "pantry": false,
+   "category": "Мясо и птица"
+  },
+  "кускус сухой": {
+   "kcal": 376,
+   "protein": 12.8,
+   "fat": 0.6,
+   "carbs": 77.0,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб"
+  },
+  "сыр Филадельфия": {
+   "kcal": 230,
+   "protein": 5.5,
+   "fat": 22.0,
+   "carbs": 3.5,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "шпинат": {
+   "kcal": 23,
+   "protein": 2.9,
+   "fat": 0.4,
+   "carbs": 1.6,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "гречка сухая": {
+   "kcal": 330,
+   "protein": 12.6,
+   "fat": 3.3,
+   "carbs": 62.0,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб"
+  },
+  "ананасы консервированные": {
+   "kcal": 60,
+   "protein": 0.4,
+   "fat": 0.1,
+   "carbs": 15.0,
+   "pantry": false,
+   "category": "Бакалея и консервы"
+  },
+  "сметана 15%": {
+   "kcal": 160,
+   "protein": 2.6,
+   "fat": 15.0,
+   "carbs": 3.6,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "рис сухой": {
+   "kcal": 344,
+   "protein": 6.7,
+   "fat": 0.7,
+   "carbs": 78.9,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб"
+  },
+  "нори (лист)": {
+   "kcal": 188,
+   "protein": 41.0,
+   "fat": 0.3,
+   "carbs": 5.0,
+   "pantry": false,
+   "category": "Бакалея и консервы",
+   "unit": "лист",
+   "grams_per_unit": 2.5
+  },
+  "соевый соус": {
+   "kcal": 60,
+   "protein": 6.0,
+   "fat": 0,
+   "carbs": 8.0,
+   "pantry": true,
+   "category": "Базовые (не покупаем)"
+  },
+  "картофель": {
+   "kcal": 77,
+   "protein": 2.0,
+   "fat": 0.4,
+   "carbs": 16.3,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "креветки варёные очищенные": {
+   "kcal": 90,
+   "protein": 20.0,
+   "fat": 1.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Рыба и морепродукты"
+  },
+  "руккола": {
+   "kcal": 25,
+   "protein": 2.6,
+   "fat": 0.7,
+   "carbs": 2.0,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "фета": {
+   "kcal": 264,
+   "protein": 14.0,
+   "fat": 21.0,
+   "carbs": 4.0,
+   "pantry": false,
+   "category": "Молочное и сыры"
+  },
+  "помидоры": {
+   "kcal": 20,
+   "protein": 0.9,
+   "fat": 0.2,
+   "carbs": 3.7,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "цукини": {
+   "kcal": 20,
+   "protein": 1.2,
+   "fat": 0.3,
+   "carbs": 3.1,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "перец болгарский": {
+   "kcal": 27,
+   "protein": 1.3,
+   "fat": 0.3,
+   "carbs": 5.3,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "тунец в собственном соку": {
+   "kcal": 96,
+   "protein": 21.0,
+   "fat": 1.0,
+   "carbs": 0,
+   "pantry": false,
+   "category": "Рыба и морепродукты",
+   "unit": "банка (130 г нетто)",
+   "grams_per_unit": 130
+  },
+  "салат листовой": {
+   "kcal": 15,
+   "protein": 1.4,
+   "fat": 0.2,
+   "carbs": 2.2,
+   "pantry": false,
+   "category": "Овощи, фрукты, зелень"
+  },
+  "тортилья пшеничная": {
+   "kcal": 300,
+   "protein": 8.0,
+   "fat": 7.0,
+   "carbs": 50.0,
+   "pantry": false,
+   "category": "Крупы, паста, хлеб",
+   "unit": "шт",
+   "grams_per_unit": 60
+  }
+ },
+ "dishes": [
+  {
+   "id": "syrniki",
+   "name": "Сырники солёные с моцареллой",
+   "meals": [
+    "breakfast"
+   ],
+   "preferred": "breakfast",
+   "default_portions": 4,
+   "ingredients": [
+    {
+     "ingredient": "творог 5%",
+     "grams": 500,
+     "who": "both"
+    },
+    {
+     "ingredient": "моцарелла твёрдая",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "мука пшеничная",
+     "grams": 40,
+     "who": "both"
+    },
+    {
+     "ingredient": "яйцо",
+     "grams": 55,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 15,
+     "who": "both"
+    }
+   ],
+   "note": "1 кг творога = 4 порции, как вы и готовите.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 436,
+     "protein": 42,
+     "fat": 23,
+     "carbs": 14,
+     "protein_pct": 39
+    },
+    "maks": {
+     "kcal": 764,
+     "protein": 74,
+     "fat": 41,
+     "carbs": 25,
+     "protein_pct": 39
+    }
+   }
+  },
+  {
+   "id": "avocado_toast",
+   "name": "Тосты с авокадо, рыбой и яйцом",
+   "meals": [
+    "breakfast"
+   ],
+   "preferred": "breakfast",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 60,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "авокадо",
+     "grams": 60,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "лосось слабосолёный/маринованный",
+     "grams": 40,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "яйцо",
+     "grams": 55,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 90,
+     "who": "maks"
+    },
+    {
+     "ingredient": "авокадо",
+     "grams": 90,
+     "who": "maks"
+    },
+    {
+     "ingredient": "лосось слабосолёный/маринованный",
+     "grams": 70,
+     "who": "maks"
+    },
+    {
+     "ingredient": "яйцо",
+     "grams": 110,
+     "who": "maks"
+    }
+   ],
+   "note": "Максу 3 тоста и 2 яйца вместо 2+1, иначе завтрак ~420 ккал при его норме ~700.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 417,
+     "protein": 22,
+     "fat": 22,
+     "carbs": 30,
+     "protein_pct": 21
+    },
+    "maks": {
+     "kcal": 689,
+     "protein": 39,
+     "fat": 37,
+     "carbs": 46,
+     "protein_pct": 23
+    }
+   }
+  },
+  {
+   "id": "oatmeal_sandwich",
+   "name": "Овсянка (Настюшка) / сэндвичи (Макс)",
+   "meals": [
+    "breakfast"
+   ],
+   "preferred": "breakfast",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "овсяные хлопья",
+     "grams": 50,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "яйцо",
+     "grams": 55,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "авокадо",
+     "grams": 50,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "сыр твёрдый",
+     "grams": 20,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 120,
+     "who": "maks"
+    },
+    {
+     "ingredient": "сыр твёрдый",
+     "grams": 50,
+     "who": "maks"
+    },
+    {
+     "ingredient": "ветчина/колбаса",
+     "grams": 80,
+     "who": "maks"
+    },
+    {
+     "ingredient": "огурцы солёные",
+     "grams": 50,
+     "who": "maks"
+    }
+   ],
+   "note": "Одна кнопка: Настюшка ест овсянку, Макс — сэндвичи.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 419,
+     "protein": 19,
+     "fat": 22,
+     "carbs": 31,
+     "protein_pct": 18
+    },
+    "maks": {
+     "kcal": 691,
+     "protein": 35,
+     "fat": 34,
+     "carbs": 59,
+     "protein_pct": 20
+    }
+   }
+  },
+  {
+   "id": "bolognese",
+   "name": "Паста болоньезе с говядиной",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "паста сухая",
+     "grams": 220,
+     "who": "both"
+    },
+    {
+     "ingredient": "говяжий фарш",
+     "grams": 300,
+     "who": "both"
+    },
+    {
+     "ingredient": "томаты в собственном соку",
+     "grams": 400,
+     "who": "both"
+    },
+    {
+     "ingredient": "лук репчатый",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "морковь",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "пармезан",
+     "grams": 20,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 15,
+     "who": "both"
+    }
+   ],
+   "per_portion": {
+    "nastya": {
+     "kcal": 652,
+     "protein": 34,
+     "fat": 27,
+     "carbs": 66,
+     "protein_pct": 21
+    },
+    "maks": {
+     "kcal": 1140,
+     "protein": 60,
+     "fat": 46,
+     "carbs": 115,
+     "protein_pct": 21
+    }
+   }
+  },
+  {
+   "id": "pasta_turkey",
+   "name": "Паста с индейкой в сливочном соусе",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "паста сухая",
+     "grams": 220,
+     "who": "both"
+    },
+    {
+     "ingredient": "индейка филе",
+     "grams": 350,
+     "who": "both"
+    },
+    {
+     "ingredient": "сливки 10%",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "лук репчатый",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "пармезан",
+     "grams": 20,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 10,
+     "who": "both"
+    }
+   ],
+   "per_portion": {
+    "nastya": {
+     "kcal": 605,
+     "protein": 46,
+     "fat": 18,
+     "carbs": 61,
+     "protein_pct": 30
+    },
+    "maks": {
+     "kcal": 1058,
+     "protein": 80,
+     "fat": 31,
+     "carbs": 107,
+     "protein_pct": 30
+    }
+   }
+  },
+  {
+   "id": "pasta_chicken_mush",
+   "name": "Паста с курицей и грибами в сливочном соусе",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "паста сухая",
+     "grams": 220,
+     "who": "both"
+    },
+    {
+     "ingredient": "куриное филе",
+     "grams": 300,
+     "who": "both"
+    },
+    {
+     "ingredient": "шампиньоны",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "сливки 10%",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "лук репчатый",
+     "grams": 50,
+     "who": "both"
+    },
+    {
+     "ingredient": "пармезан",
+     "grams": 20,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 10,
+     "who": "both"
+    }
+   ],
+   "per_portion": {
+    "nastya": {
+     "kcal": 605,
+     "protein": 45,
+     "fat": 19,
+     "carbs": 62,
+     "protein_pct": 30
+    },
+    "maks": {
+     "kcal": 1058,
+     "protein": 78,
+     "fat": 33,
+     "carbs": 109,
+     "protein_pct": 30
+    }
+   }
+  },
+  {
+   "id": "couscous_salmon",
+   "name": "Кускус с запечённой красной рыбой, Филадельфией и шпинатом",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "кускус сухой",
+     "grams": 190,
+     "who": "both"
+    },
+    {
+     "ingredient": "лосось свежий (филе)",
+     "grams": 300,
+     "who": "both"
+    },
+    {
+     "ingredient": "сыр Филадельфия",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "шпинат",
+     "grams": 100,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 10,
+     "who": "both"
+    }
+   ],
+   "per_portion": {
+    "nastya": {
+     "kcal": 569,
+     "protein": 33,
+     "fat": 23,
+     "carbs": 55,
+     "protein_pct": 23
+    },
+    "maks": {
+     "kcal": 996,
+     "protein": 58,
+     "fat": 41,
+     "carbs": 95,
+     "protein_pct": 23
+    }
+   }
+  },
+  {
+   "id": "buckwheat_chicken",
+   "name": "Гречка с курицей, ананасами и шампиньонами",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "гречка сухая",
+     "grams": 200,
+     "who": "both"
+    },
+    {
+     "ingredient": "куриное филе",
+     "grams": 400,
+     "who": "both"
+    },
+    {
+     "ingredient": "ананасы консервированные",
+     "grams": 150,
+     "who": "both"
+    },
+    {
+     "ingredient": "шампиньоны",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "сметана 15%",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "лук репчатый",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 15,
+     "who": "both"
+    }
+   ],
+   "note": "Всегда на 2 порции.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 555,
+     "protein": 48,
+     "fat": 15,
+     "carbs": 57,
+     "protein_pct": 35
+    },
+    "maks": {
+     "kcal": 970,
+     "protein": 85,
+     "fat": 26,
+     "carbs": 100,
+     "protein_pct": 35
+    }
+   }
+  },
+  {
+   "id": "bowl",
+   "name": "Боул с рисом, авокадо, рыбой, сливочным сыром и нори",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "рис сухой",
+     "grams": 200,
+     "who": "both"
+    },
+    {
+     "ingredient": "лосось слабосолёный/маринованный",
+     "grams": 220,
+     "who": "both"
+    },
+    {
+     "ingredient": "авокадо",
+     "grams": 140,
+     "who": "both"
+    },
+    {
+     "ingredient": "сыр Филадельфия",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "нори (лист)",
+     "grams": 5.0,
+     "who": "both"
+    },
+    {
+     "ingredient": "огурцы свежие",
+     "grams": 100,
+     "who": "both"
+    },
+    {
+     "ingredient": "соевый соус",
+     "grams": 20,
+     "who": "both"
+    }
+   ],
+   "note": "Всегда на 2 порции.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 555,
+     "protein": 26,
+     "fat": 22,
+     "carbs": 61,
+     "protein_pct": 19
+    },
+    "maks": {
+     "kcal": 971,
+     "protein": 46,
+     "fat": 39,
+     "carbs": 106,
+     "protein_pct": 19
+    }
+   }
+  },
+  {
+   "id": "pots",
+   "name": "Горшочки с индейкой/курицей, картошкой и шампиньонами",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "lunch",
+   "default_portions": 4,
+   "ingredients": [
+    {
+     "ingredient": "филе индейки или курицы",
+     "grams": 400,
+     "who": "both"
+    },
+    {
+     "ingredient": "картофель",
+     "grams": 480,
+     "who": "both"
+    },
+    {
+     "ingredient": "шампиньоны",
+     "grams": 200,
+     "who": "both"
+    },
+    {
+     "ingredient": "лук репчатый",
+     "grams": 50,
+     "who": "both"
+    },
+    {
+     "ingredient": "морковь",
+     "grams": 50,
+     "who": "both"
+    },
+    {
+     "ingredient": "сметана 15%",
+     "grams": 100,
+     "who": "both"
+    },
+    {
+     "ingredient": "сыр твёрдый",
+     "grams": 50,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 15,
+     "who": "both"
+    }
+   ],
+   "note": "Всегда на 4 порции: на 4 порции — 800 г индейки или курицы и 8 средних картофелин (~960 г). Сметана и сыр добавлены для калорийности.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 505,
+     "protein": 47,
+     "fat": 20,
+     "carbs": 33,
+     "protein_pct": 37
+    },
+    "maks": {
+     "kcal": 883,
+     "protein": 83,
+     "fat": 35,
+     "carbs": 58,
+     "protein_pct": 37
+    }
+   }
+  },
+  {
+   "id": "shrimp_salad",
+   "name": "Салат с авокадо, руколой, креветками, фетой и томатами",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "dinner",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "креветки варёные очищенные",
+     "grams": 400,
+     "who": "both"
+    },
+    {
+     "ingredient": "авокадо",
+     "grams": 210.0,
+     "who": "both"
+    },
+    {
+     "ingredient": "руккола",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "фета",
+     "grams": 120,
+     "who": "both"
+    },
+    {
+     "ingredient": "помидоры",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 20,
+     "who": "both"
+    },
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 30,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 60,
+     "who": "maks"
+    }
+   ],
+   "note": "Всегда на 2 порции. Добавлен хлеб к салату.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 537,
+     "protein": 41,
+     "fat": 30,
+     "carbs": 21,
+     "protein_pct": 30
+    },
+    "maks": {
+     "kcal": 958,
+     "protein": 72,
+     "fat": 53,
+     "carbs": 41,
+     "protein_pct": 30
+    }
+   }
+  },
+  {
+   "id": "baked_salmon",
+   "name": "Лосось, запечённый с цукини и перцем",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "dinner",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "лосось свежий (филе)",
+     "grams": 350,
+     "who": "both"
+    },
+    {
+     "ingredient": "цукини",
+     "grams": 300,
+     "who": "both"
+    },
+    {
+     "ingredient": "перец болгарский",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "кускус сухой",
+     "grams": 100,
+     "who": "both",
+     "optional": true
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 20,
+     "who": "both"
+    }
+   ],
+   "note": "Кускус — необязательный гарнир (галочка в приложении). Овощи можно запечь или сделать свежий салат.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 503,
+     "protein": 33,
+     "fat": 25,
+     "carbs": 36,
+     "protein_pct": 26
+    },
+    "maks": {
+     "kcal": 880,
+     "protein": 57,
+     "fat": 43,
+     "carbs": 63,
+     "protein_pct": 26
+    }
+   },
+   "per_portion_without_optional": {
+    "nastya": {
+     "kcal": 366,
+     "protein": 28,
+     "fat": 24,
+     "carbs": 8,
+     "protein_pct": 31
+    },
+    "maks": {
+     "kcal": 641,
+     "protein": 49,
+     "fat": 43,
+     "carbs": 14,
+     "protein_pct": 31
+    }
+   }
+  },
+  {
+   "id": "tuna_salad",
+   "name": "Салат с тунцом, яйцом и огурцом",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "dinner",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "тунец в собственном соку",
+     "grams": 390,
+     "who": "both"
+    },
+    {
+     "ingredient": "яйцо",
+     "grams": 275,
+     "who": "both"
+    },
+    {
+     "ingredient": "сметана 15%",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "огурцы свежие",
+     "grams": 80,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "огурцы солёные",
+     "grams": 100,
+     "who": "maks"
+    },
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 30,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "хлеб (ломтик 30 г)",
+     "grams": 90,
+     "who": "maks"
+    }
+   ],
+   "note": "Огурцы: Настюшке свежие, Максу солёные. Добавлены заправка и хлеб.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 429,
+     "protein": 46,
+     "fat": 18,
+     "carbs": 18,
+     "protein_pct": 43
+    },
+    "maks": {
+     "kcal": 840,
+     "protein": 84,
+     "fat": 33,
+     "carbs": 48,
+     "protein_pct": 40
+    }
+   }
+  },
+  {
+   "id": "tortilla_chicken",
+   "name": "Тортилья-ролл с курицей",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "dinner",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "куриное филе",
+     "grams": 400,
+     "who": "both"
+    },
+    {
+     "ingredient": "помидоры",
+     "grams": 150,
+     "who": "both"
+    },
+    {
+     "ingredient": "салат листовой",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "шампиньоны",
+     "grams": 150,
+     "who": "both"
+    },
+    {
+     "ingredient": "сыр Филадельфия",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "сметана 15%",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "соевый соус",
+     "grams": 10,
+     "who": "both"
+    },
+    {
+     "ingredient": "масло растительное/оливковое",
+     "grams": 10,
+     "who": "both"
+    },
+    {
+     "ingredient": "тортилья пшеничная",
+     "grams": 60,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "огурцы свежие",
+     "grams": 60,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "тортилья пшеничная",
+     "grams": 120,
+     "who": "maks"
+    },
+    {
+     "ingredient": "огурцы солёные",
+     "grams": 80,
+     "who": "maks"
+    }
+   ],
+   "note": "Настюшке 1 ролл, Максу 2.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 519,
+     "protein": 45,
+     "fat": 21,
+     "carbs": 37,
+     "protein_pct": 35
+    },
+    "maks": {
+     "kcal": 948,
+     "protein": 80,
+     "fat": 38,
+     "carbs": 71,
+     "protein_pct": 34
+    }
+   }
+  },
+  {
+   "id": "tortilla_fish",
+   "name": "Тортилья-ролл с красной рыбой",
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "preferred": "dinner",
+   "default_portions": 2,
+   "ingredients": [
+    {
+     "ingredient": "лосось слабосолёный/маринованный",
+     "grams": 250,
+     "who": "both"
+    },
+    {
+     "ingredient": "сыр Филадельфия",
+     "grams": 80,
+     "who": "both"
+    },
+    {
+     "ingredient": "яйцо",
+     "grams": 165,
+     "who": "both"
+    },
+    {
+     "ingredient": "салат листовой",
+     "grams": 60,
+     "who": "both"
+    },
+    {
+     "ingredient": "тортилья пшеничная",
+     "grams": 60,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "огурцы свежие",
+     "grams": 60,
+     "who": "nastya"
+    },
+    {
+     "ingredient": "тортилья пшеничная",
+     "grams": 120,
+     "who": "maks"
+    },
+    {
+     "ingredient": "огурцы солёные",
+     "grams": 80,
+     "who": "maks"
+    }
+   ],
+   "note": "Настюшке 1 ролл, Максу 2.",
+   "per_portion": {
+    "nastya": {
+     "kcal": 535,
+     "protein": 35,
+     "fat": 29,
+     "carbs": 34,
+     "protein_pct": 26
+    },
+    "maks": {
+     "kcal": 976,
+     "protein": 62,
+     "fat": 51,
+     "carbs": 65,
+     "protein_pct": 25
+    }
+   }
+  }
+ ]
+}
